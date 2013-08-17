@@ -1,0 +1,64 @@
+
+
+
+    
+      
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapeamento de crime em Teresina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+     <%= javascript_include_tag "application" %>
+     <%= csrf_meta_tags %>
+  </head>
+  <body>
+    
+ <div class="container-fluid">
+
+ 
+
+  <div class="hero-unit">
+  <h2>MAPA DO CRIME - TERESINA</h2>
+  <p>Click Aqui!!!</p>
+  
+      <button type="submit" class="btn"><%= link_to 'Criar Crime', new_crime_path %></button>
+      
+    
+  
+</div>
+
+
+ <div class="row-fluid">
+<div class="span12">
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">TheGeoCrime</a>
+    <ul class="nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li> <%= link_to 'Criar Crime', new_crime_path %>  </li>
+      <li><a href="#">Estatisticas</a></li>
+      <li><a href="#">Contato</a></li>
+      <li><a href="#">Quem Somos</a></li>
+    </ul>
+  </div>
+<%= yield %>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

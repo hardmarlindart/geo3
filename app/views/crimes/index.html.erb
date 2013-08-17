@@ -1,0 +1,7 @@
+ 
+<%= gmaps("map_options" => { "detect_location" => true, "animation" => "google.maps.Animation.BOUNCE" , "center_on_user" => true, "zoom" => 6},"markers" => { "data" => @pins, "options" => { "picture" => "http://maps.google.com/mapfiles/kml/pal4/icon52.png", "width" => 32, "length" => 32 } }) %>
+ 
+<%= yield :scripts %>
+
+
+<%= link_to 'New Crime', new_crime_path %>
